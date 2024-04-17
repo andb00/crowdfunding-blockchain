@@ -18,7 +18,7 @@ The project is a simple crowdfunding application deployed on the Web3 which is b
 
 ### References
 Standing on the shoulders of a giant
-- [adrianhajdin github repo](https://github.com/adrianhajdin/project_crowdfunding)
+- [Reference Github Repository](https://github.com/adrianhajdin/project_crowdfunding)
 - [JavaScript Mastery Video](https://www.youtube.com/watch?v=BDCT6TYLYdI&list=PLHR5QvDQ7pNKVGRLOQOEDeyZ39Amp6SVH&index=2&t=4s)
 
 
