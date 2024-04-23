@@ -1,12 +1,14 @@
 import React from 'react'
+import { Link, useNavigate } from 'react-router-dom';
 
-const Navbar = () => {
+import { CustomButton } from './';
+import { logo, menu, search, thirdweb } from '../assets';
+import { navlinks } from '../constants';
+
+const Navbar = () => 
+{
   return (
-    <div>
-      <div>
-        Navbar TEST 
-      </div>
-    </div>
+    <div> Navbar TEST </div>
   )
 }
 
