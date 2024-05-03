@@ -17,7 +17,7 @@ contract Crowdfunding {
 		uint256[] donations; //an array to keep track of the actual number amount of our donations
 	}
 
-	mapping(uint256 => Campaign) public campaigns; // TODO: Learn what this does; Understand mapping
+	mapping(uint256 => Campaign) public campaigns;
 
 	uint256 public numberOfCampaigns = 0; // Global Variable: Keep track of the number of campaigns we have created to give them ID's
 
