@@ -1,8 +1,7 @@
-import React, { useContext, createContext } from 'react';
+import React, {createContext, useContext} from 'react';
 
-import { useAddress, useContract, useMetamask, useContractWrite } from '@thirdweb-dev/react';
-import { ethers } from 'ethers';
-import { EditionMetadataWithOwnerOutputSchema } from '@thirdweb-dev/sdk';
+import {useAddress, useContract, useContractWrite, useMetamask} from '@thirdweb-dev/react';
+import {ethers} from 'ethers';
 
 const StateContext = createContext();
 
@@ -35,7 +34,7 @@ export const StateContextProvider = ({ children }) => {
     const getCampaigns = async () => {
         const campaigns = await contract.call('getCampaigns');
 
-        const parsedCampaings = campaigns.map((campaign, i) => ({
+        return campaigns.map((campaign, i) => ({
             owner: campaign.owner,
             title: campaign.title,
             description: campaign.description,
@@ -45,22 +44,16 @@ export const StateContextProvider = ({ children }) => {
             image: campaign.image,
             pId: i
         }));
-
-        return parsedCampaings;
     }
 
     const getUserCampaigns = async () => {
         const allCampaigns = await getCampaigns();
 
-        const filteredCampaigns = allCampaigns.filter((campaign) => campaign.owner === address);
-
-        return filteredCampaigns;
+        return allCampaigns.filter((campaign) => campaign.owner === address);
     }
 
     const donate = async (pId, amount) => {
-        const data = await contract.call('donateToCampaign', [pId], { value: ethers.utils.parseEther(amount)});
-
-        return data;
+        return await contract.call('donateToCampaign', [pId], {value: ethers.utils.parseEther(amount)});
     }
 
     const getDonations = async (pId) => {
