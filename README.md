@@ -2,7 +2,7 @@
 
 
 ## Description
-This is a project for our Computer Science course: Fundamentals of Cryptography with Applications to Blockchain. 
+This is a group project for our Computer Science course: Fundamentals of Cryptography with Applications to Blockchain. 
 
 The project is a simple crowdfunding application deployed on the Web3 which is built on blockchain technology. 
 
