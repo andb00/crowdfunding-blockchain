@@ -1,5 +1,5 @@
 # Blockchain Crowdfunding Decentralized Application (DApp)
-
+![](https://camo.githubusercontent.com/82c9df66b4ff474f6d113da22652eb96ddc73651c34651748a831a14e0881ffa/68747470733a2f2f692e6962622e636f2f6b36706a3051742f6874756d2d362e706e67)  
 
 ## Description
 This is a group project for our Computer Science course: Fundamentals of Cryptography with Applications to Blockchain. 
